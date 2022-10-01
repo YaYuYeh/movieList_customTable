@@ -5,8 +5,9 @@
 //  Created by Ya Yu Yeh on 2022/9/29.
 //
 
+
+//import SafariServices
 import UIKit
-import SafariServices
 
 class ListTableViewController: UITableViewController {
     let movies = [
@@ -26,7 +27,6 @@ class ListTableViewController: UITableViewController {
             Film(enName: "1922", chName: "一九二二", pic: "1922", releaseDate: "(2017)", trailer: "AnaS7FpxJRQ"),
             Film(enName: "Detention", chName: "返校", pic: "Detention", releaseDate: "(2019)", trailer: "Cq0K2ipTaPM")])
     ]
-    
     
     
     override func viewDidLoad() {
@@ -103,7 +103,10 @@ class ListTableViewController: UITableViewController {
 //        }
 //    }
 
+    
 
+    
+    //點選儲存格後，透過IBSegueAction，將該儲存格的資料傳至下一頁
     @IBSegueAction func showTrailer(_ coder: NSCoder) -> YoutubeViewController? {
         print("sss")
         if let section = tableView.indexPathForSelectedRow?.section,

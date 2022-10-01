@@ -16,11 +16,9 @@ class YoutubeViewController: UIViewController {
         super.viewDidLoad()
         updateUI()
         navigationItem.title = film.enName
-        
     }
     
     func updateUI(){
-        //nameLbl.text = film.enName
         //使用webkit播放youtube
         if let url = URL(string: "https://www.youtube.com/watch?v=\(self.film.trailer)"){
             print("url right")
