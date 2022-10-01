@@ -62,7 +62,7 @@ class ListTableViewController: UITableViewController {
         cell.releaseDateLbl.text = movie.releaseDate
         //設定cell樣式
         //字型、大小
-        cell.chNameLbl.font = UIFont(name: "Huiwen-mincho", size: 21)
+        cell.chNameLbl.font = UIFont(name: "Huiwen-mincho", size: 19)
         cell.chNameLbl.textColor = .white
         cell.enNameLbl.font = UIFont(name: "Huiwen-mincho", size: 18)
         cell.enNameLbl.textColor = .white
